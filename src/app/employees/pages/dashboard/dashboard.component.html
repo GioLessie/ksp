@@ -1,0 +1,42 @@
+<div class="container">
+    <h2>últimos ingresos en tech</h2>
+</div>
+<div class="list container">
+    <div class="list__item" *ngFor="let employee of employeesTech" >
+        <app-employee-card [employee]="employee"></app-employee-card>
+    </div>   
+    <a class="list__more"
+        [routerLink]="['../listado', 'tech']"
+        mat-raised-button
+        color="primary">
+        Ver todo
+    </a>   
+</div>
+<div class="container">
+    <h2>últimos ingresos en rrhh</h2>
+</div>
+<div class="list container">
+    <div class="list__item" *ngFor="let employee of employeesRrhh" >
+        <app-employee-card [employee]="employee"></app-employee-card>
+    </div>   
+    <a class="list__more"
+        [routerLink]="['../listado', 'rrhh']"
+        mat-raised-button
+        color="primary">
+        Ver todo
+    </a>   
+</div>
+<div class="container">
+    <h2>últimos ingresos en rrhh</h2>
+</div>
+<div class="list container">
+    <div class="list__item" *ngFor="let employee of employeesMngm" >
+        <app-employee-card [employee]="employee"></app-employee-card>
+    </div>   
+    <a class="list__more"
+        [routerLink]="['../listado', 'management']"
+        mat-raised-button
+        color="primary">
+        Ver todo
+    </a>   
+</div>

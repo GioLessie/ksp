@@ -1,0 +1,21 @@
+<div class="session">
+    <div class="session__begin" *ngIf="!user">
+        <button mat-button routerLink="./auth/login">Log in</button>
+        <button mat-button routerLink="./auth/registrate">Sign in</button>
+    </div>
+    <div class="session__user" *ngIf="user">
+        <span>
+            {{user}}
+        </span>
+        <button mat-mini-fab [matMenuTriggerFor]="menu">
+            <mat-icon>person</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item
+                (click)="logout()">
+                <mat-icon>logout</mat-icon>
+                <span>Log out</span>
+            </button>
+        </mat-menu>
+    </div>
+</div>

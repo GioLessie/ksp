@@ -1,0 +1,43 @@
+@import "/src/assets/styles/variables.scss";
+
+.employee{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__content{
+        flex-grow: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__depart{
+        text-transform: uppercase;
+    }
+    &__author {
+        background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+        background-size: cover;  
+    }
+    &__footer{
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+    }
+    &__action{
+        display: flex;
+        justify-content: end;
+    }
+    &__detail{
+        font-weight: 600;
+        margin: 0 0 0 13px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        small{
+            color: gray;
+            display: block;
+        }
+    }
+    .mat-divider-horizontal{
+        position: relative;
+    }
+}

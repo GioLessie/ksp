@@ -1,0 +1,29 @@
+@import "/src/assets/styles/variables.scss";
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__item{
+        max-width: 300px;
+        box-sizing: border-box;
+        margin: 0px 0px 20px;
+
+    }
+    &__more{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: $tablet-size) {
+    .list .list__item{
+        max-width: 48%;
+        margin: 10px 0px;
+    }
+}
+@media screen and (max-width: $mobile-size) {
+    .list .list__item{
+        max-width: 100%;
+        margin: 5px 0px;
+    }
+}

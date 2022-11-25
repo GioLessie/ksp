@@ -1,0 +1,46 @@
+<mat-card class="employee">
+    <mat-card-header>
+        <mat-card-title>{{employee.completeName}}</mat-card-title>
+        <mat-card-subtitle class="employee__depart">{{employee.department}}</mat-card-subtitle>
+      </mat-card-header>
+    <img mat-card-image 
+    [src]="employee.photo| noImage">
+    <mat-card-content class="employee__content">
+        <p>
+            <strong>Salario:</strong>
+            {{employee.salary}}
+        </p>
+        <p>
+            <strong>Ingreso:</strong>
+            {{employee.admission |  date: 'dd/MM/yyyy'}}
+        </p>
+        <div class="employee__footer">
+            <div mat-card-avatar class="employee__author"></div>
+            <p class="employee__detail">
+                <span>
+                    Beneficiario: {{employee.beneficiary.name}}
+                </span>
+                <small>
+                    {{employee.beneficiary.relationship}}
+                </small>
+            </p>
+        </div>
+    </mat-card-content>
+    <mat-divider></mat-divider>
+    <mat-card-actions class="employee__action">
+        <a *ngIf="!editable" mat-raised-button color="primary" 
+            [routerLink]="['/empleados', employee.id]"> 
+            Ver más 
+            <mat-icon [inline]="true">
+                exit_to_app
+            </mat-icon>
+        </a>
+        <a mat-raised-button color="accent" 
+            [routerLink]="['/empleados/editar', employee.id]"> 
+            Editar 
+            <mat-icon [inline]="true">
+                edit
+            </mat-icon>
+        </a>
+    </mat-card-actions>
+</mat-card>

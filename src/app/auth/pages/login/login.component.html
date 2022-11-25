@@ -1,0 +1,25 @@
+<form class="login">
+    <h2>Inicia Sesión</h2>
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="hola@mail.com" 
+        [(ngModel)]="email" required
+        [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Contraseña</mat-label>
+      <input matInput placeholder="password" 
+        type="password"
+        [(ngModel)]="password" required
+        [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+    <button mat-raised-button
+      (click)="login()">
+        Iniciar Sesión
+    </button>
+    <span> 
+        Aún no tienes una cuenta? 
+        <a routerLink="../registrate">Regístrate</a>
+    </span>
+</form>

@@ -1,0 +1,33 @@
+@import "/src/assets/styles/variables.scss";
+
+.lobby{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background-color: #fafafa;
+    height: calc(100% - 80px);
+    box-sizing: border-box;
+    &__content{
+        max-width: 400px;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        border: 1px solid $color-primary;
+        padding: 30px;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width: $tablet-size) {
+    .lobby{
+        top: 56px;
+    }
+}
+@media screen and (max-width: $mobile-size) {
+    .lobby{
+        top: 0px;
+    }
+}

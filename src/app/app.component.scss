@@ -1,0 +1,27 @@
+@import "/src/assets/styles/variables.scss";
+
+.sidenav{
+    width: 100%;
+    .mat-drawer-container{
+        height: 100vh;
+    }
+    .mat-drawer{
+        height: 100vh;
+        background: white;
+        box-shadow: 2px 1px 6px 0px #00000063;
+    }
+    &__mobile{
+        display: none;
+        padding: 10px 0;
+        text-transform: uppercase;
+        background-color: $color-primary;
+    }
+}
+@media screen and (max-width: $mobile-size) {
+    .sidenav{
+        &__mobile{
+            display: block;
+        }
+    }
+
+}

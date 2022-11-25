@@ -1,0 +1,18 @@
+<mat-form-field class="search"
+    appearance="fill">
+    <mat-label>Buscar Empleados</mat-label>
+    <input type="text"
+           placeholder="Juan Antonio..."
+           aria-label="Buscar"
+           matInput
+           [(ngModel)]="stringSearch"
+           [matAutocomplete]="auto"
+           (input)="searching()">
+    <mat-autocomplete autoActiveFirstOption 
+        #auto="matAutocomplete"
+        (optionSelected)="optionSelected($event)">
+      <mat-option *ngFor="let employee of employees" [value]="employee">
+        {{employee.completeName}}
+      </mat-option>
+    </mat-autocomplete>
+</mat-form-field>

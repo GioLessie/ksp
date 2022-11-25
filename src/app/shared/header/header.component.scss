@@ -1,0 +1,57 @@
+@import "/src/assets/styles/variables.scss";
+
+.header{
+    position: sticky;
+    box-shadow: 5px 6px 12px 1px #c6c6c6bd;
+    &__title{
+        padding: 5px 0;
+        top: 0;
+        z-index: 3;
+        &__logo{
+            max-width: 70px;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h1{
+            margin: 0;
+            font-size: 33px;
+        }
+    }
+    &__categories{
+        padding: 10px 0;
+        text-transform: uppercase;
+        background-color: $color-primary;
+        .container{
+            display: flex;
+            justify-content: space-around;
+            a{
+                color: white;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: $tablet-size) {
+    .header{
+        &__title{
+            h1{
+                font-size: 24px;
+            }
+            &__logo{
+                max-width: 60px;
+            }
+        }
+    }
+}
+@media screen and (max-width: $mobile-size) {
+    .header{
+        &__categories{
+            display: none;
+        }
+    }
+
+}

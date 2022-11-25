@@ -1,0 +1,33 @@
+
+<div class="sidenav">
+    <mat-sidenav-container>
+        <mat-sidenav #sidenav mode="push">
+            <mat-nav-list>
+                <a routerLink="./empleados/listado" 
+                    mat-list-item>
+                    <mat-icon mat-list-icon>label</mat-icon>
+                    <span>Departamentos</span>
+                </a>
+                <mat-divider></mat-divider>
+                <a [routerLink]="['/empleados/listado', category.value]"
+                    *ngFor="let category of CATEGORIES"
+                    mat-list-item
+                    (click)="sidenav.toggle()">
+                    <mat-icon mat-list-icon>exit_to_app</mat-icon>
+                    <span>{{category.name}}</span>
+                </a>
+            </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <div class="sidenav__mobile">
+                <button mat-icon-button
+                    class="bg-black" 
+                    (click)="sidenav.toggle()">
+                    <mat-icon class="white">menu</mat-icon>
+                </button>
+            </div>
+            <app-header></app-header>
+            <router-outlet #router></router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>

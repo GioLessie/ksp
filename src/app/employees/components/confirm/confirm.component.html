@@ -1,0 +1,13 @@
+<h1>Estás seguro?</h1>
+<br>
+<p>Estas a punto de borrar a {{data.completeName}}</p>
+<p>Deseas continuar?</p>
+
+<div>
+    <button mat-button (click)="borrar()" color="warn" > 
+        Borrar
+    </button>
+    <button mat-button (click)="cerrar()" color="primary" > 
+        Cerrar
+    </button>
+</div>

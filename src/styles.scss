@@ -1,0 +1,42 @@
+@import "./assets/styles/variables.scss";
+
+html, body { 
+    height: 100%; 
+}
+body { 
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    color: $color-primary;
+}
+h1{
+    margin: 0;
+    color: $color-primary;
+}
+h2{
+    text-transform: uppercase;
+    color: $color-primary;
+}
+a{
+    color: $color-primary;
+    text-decoration: none;
+}
+form{
+    display: flex;
+    flex-flow: column;
+}
+.container{
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+    &--full{
+        max-width: none;
+        padding: 0 30px;
+    }
+}
+.white{
+    color: white;
+}
+.bg-black{
+    background-color: $color-primary;
+}

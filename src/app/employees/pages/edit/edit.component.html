@@ -1,0 +1,82 @@
+<div class="edit-container container">
+    <mat-card class="edit">
+        <mat-card-header>
+            <mat-form-field class="edit__input">
+                <mat-label>Nombre</mat-label>
+                <input matInput 
+                    type="text"
+                    [(ngModel)]="employee.completeName"
+                    required>
+            </mat-form-field>
+            <mat-card-subtitle class="edit__depart">
+                <mat-form-field class="edit__input">
+                    <mat-label>Departamento</mat-label>
+                    <input matInput 
+                        type="text"
+                        [(ngModel)]="employee.department"
+                        required>
+                </mat-form-field>
+            </mat-card-subtitle>
+          </mat-card-header>
+        <img mat-card-image 
+        [src]="employee.photo| noImage">
+        <mat-card-content class="edit__content">
+            <p>
+                <mat-form-field class="edit__input">
+                    <mat-label>Salario</mat-label>
+                    <input matInput 
+                        type="text"
+                        [(ngModel)]="employee.salary"
+                        required>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field class="edit__input">
+                    <mat-label>Ingreso</mat-label>
+                    <input matInput 
+                        type="text"
+                        [(ngModel)]="employee.admission"
+                        required>
+                </mat-form-field>
+            </p>
+            <div class="employee__footer">
+                <div mat-card-avatar class="employee__author"></div>
+                <p class="employee__detail">
+                    
+                <mat-form-field class="edit__input">
+                    <mat-label>Beneficiario</mat-label>
+                    <input matInput 
+                        type="text"
+                        [(ngModel)]="employee.beneficiary.name"
+                        required>
+                </mat-form-field>
+                
+                <mat-form-field class="edit__input">
+                    <mat-label>Parentezco</mat-label>
+                    <input matInput 
+                        type="text"
+                        [(ngModel)]="employee.beneficiary.relationship"
+                        required>
+                </mat-form-field>
+                </p>
+            </div>
+        </mat-card-content>
+        <mat-divider></mat-divider>
+        <mat-card-actions class="edit__action">
+            <a mat-raised-button color="primary" 
+                (click)="save()"> 
+                Guardar 
+                <mat-icon [inline]="true">
+                    save
+                </mat-icon>
+            </a>
+            <a mat-raised-button color="warn" 
+                (click)="delete()"> 
+                Borrar 
+                <mat-icon [inline]="true">
+                    delete
+                </mat-icon>
+            </a>
+        </mat-card-actions>
+    </mat-card>
+</div>
