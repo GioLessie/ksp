@@ -1,27 +1,24 @@
-# employees-app
+# Employees App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1.
+Aplicación de gestión de Empleados
 
-## Development server
+## Frontend
+Proyecto generado con [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## API
 
-## Code scaffolding
+La api que consume está construida con [AWS Lambdas](https://aws.amazon.com/es/lambda/) y [Api Gateway](https://aws.amazon.com/es/api-gateway/).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Base de datos
 
-## Build
+La persistencia está almacenada en [DynamoDB](https://aws.amazon.com/es/dynamodb/) para los datos y en [S3](https://aws.amazon.com/es/s3/) para las imágenes.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Versión desplegada
 
-## Running unit tests
+Se puede encontrar una versión desplegada de la aplicación en [Github Pages](https://giolessie.github.io/ksp/)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Áreas de mejora identificadas
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Validaciones de formularios
+- Manejo del estado en arquitectura Redux a través de NGRX
+- Creación de método en el servicio EmployeesService para obtener los diferentes departamentos
