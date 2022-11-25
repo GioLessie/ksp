@@ -22,3 +22,4 @@ Se puede encontrar una versión desplegada de la aplicación en [Github Pages](h
 - Validaciones de formularios
 - Manejo del estado en arquitectura Redux a través de NGRX
 - Creación de método en el servicio EmployeesService para obtener los diferentes departamentos
+- Implementar la posibilidad de actualizar la imagen de cada empleado
