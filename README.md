@@ -8,6 +8,7 @@ Proyecto generado con [Angular CLI](https://github.com/angular/angular-cli) vers
 ## API
 
 La api que consume está construida con [AWS Lambdas](https://aws.amazon.com/es/lambda/) y [Api Gateway](https://aws.amazon.com/es/api-gateway/).
+Para agilizar la autenticación al sitio, se realizó mediante Firebase Autenticathor
 
 ## Base de datos
 
@@ -23,3 +24,4 @@ Se puede encontrar una versión desplegada de la aplicación en [Github Pages](h
 - Manejo del estado en arquitectura Redux a través de NGRX
 - Creación de método en el servicio EmployeesService para obtener los diferentes departamentos
 - Implementar la posibilidad de actualizar la imagen de cada empleado
+- Implementar un loader que se ejecute según un interceptor de peticiones http
