@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { switchMap } from 'rxjs';
 import { Employee } from '../../model/employees.model';
 import { EmployeesService } from '../../services/employees.service';
+import * as XLSX from 'xlsx';
 
 @Component({
   selector: 'app-list',
@@ -31,5 +32,17 @@ export class ListComponent implements OnInit {
       .subscribe( employees => {
         this.employees = employees
       } ) 
+  }
+
+  download(){
+    let element = document.getElementById('excel-table');
+    const ws: XLSX.WorkSheet =XLSX.utils.table_to_sheet(element);
+ 
+    /* generate workbook and add the worksheet */
+    const wb: XLSX.WorkBook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, 'Sheet1');
+ 
+    /* save to file */  
+    XLSX.writeFile(wb, `employees-${this.title}.xlsx`);
   }
 }

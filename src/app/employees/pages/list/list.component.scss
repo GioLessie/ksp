@@ -10,6 +10,14 @@
         margin: 0px 0px 20px;
 
     }
+    h2{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+#excel-table{
+    display: none;
 }
 @media screen and (max-width: $tablet-size) {
     .list .list__item{

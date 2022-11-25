@@ -1,12 +1,38 @@
-<div class="container" *ngIf="employees.length > 0">
-    <h2>{{title}}</h2>
+<div class="list container" *ngIf="employees.length > 0">
+  <h2>
+    <span>
+        {{ title }}
+    </span>
+    <button mat-raised-button color="primary" (click)="download()">
+      Descargar
+      <mat-icon> download </mat-icon>
+    </button>
+  </h2>
 </div>
 <div class="list container">
-    <div class="list__item" *ngFor="let employee of employees">
-        <app-employee-card [employee]="employee"></app-employee-card>
-    </div>   
-    <div *ngIf="employees.length == 0">
-        <mat-icon>error</mat-icon>
-        <p>Sin resultados</p>
-    </div>
+  <div class="list__item" *ngFor="let employee of employees">
+    <app-employee-card [employee]="employee"></app-employee-card>
+  </div>
+  <div *ngIf="employees.length == 0">
+    <mat-icon>error</mat-icon>
+    <p>Sin resultados</p>
+  </div>
 </div>
+<table id="excel-table">
+  <tr>
+    <th>Id</th>
+    <th>Nombre</th>
+    <th>Ingreso</th>
+    <th>Departamento</th>
+    <th>Salario</th>
+    <th>Beneficiario</th>
+  </tr>
+  <tr *ngFor="let item of employees">
+    <td>{{ item.id }}</td>
+    <td>{{ item.completeName }}</td>
+    <td>{{ item.admission }}</td>
+    <td>{{ item.department }}</td>
+    <td>{{ item.salary }}</td>
+    <td>{{ item.beneficiary.name }}</td>
+  </tr>
+</table>
