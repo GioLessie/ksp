@@ -1,0 +1,16 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: RESTful API endpoint o read and write to Dynamo
+Resources:
+  crudemployeeslambdaitem:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs14.x
+      CodeUri: .
+      Description: 'RESTful API endpoint o read and write to Dynamo'
+      MemorySize: 128
+      Timeout: 3
+      Role: 'arn:aws:iam::488181570562:role/service-role/crud-employees-rol'
+      Layers:
+        - 'arn:aws:lambda:us-east-1:580247275435:layer:LambdaInsightsExtension:21'

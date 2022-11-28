@@ -1,0 +1,212 @@
+[
+  {
+    "id": "0330847d-3797-4614-be96-6dbe8330826e",
+    "admission": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)",
+    "beneficiary": {
+      "id": "12",
+      "name": "Almendra Soro",
+      "relationship": "Hermana",
+      "birthdate": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)"
+    },
+    "completeName": "Fernanda Soro Muan",
+    "department": "business",
+    "photo": "https://employees-img.s3.amazonaws.com/12.jpg",
+    "salary": "65,000.00",
+    "status": "Activo"
+  },
+  {
+    "id": "a29b0131-ab3f-41e8-a761-2871f26ec5a3",
+    "admission": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)",
+    "beneficiary": {
+      "id": "7",
+      "name": "Ulises Mendez",
+      "relationship": "Padre",
+      "birthdate": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)"
+    },
+    "completeName": "Joel Mendez Fue",
+    "department": "management",
+    "photo": "https://employees-img.s3.amazonaws.com/7.jpg",
+    "salary": "18,000.00",
+    "status": "Activo"
+  },
+  {
+    "id": "a294c299-2847-406b-9e7e-f95f8fbe1e9c",
+    "admission": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)",
+    "beneficiary": {
+      "id": "5",
+      "name": "Nina Montes",
+      "relationship": "Padre",
+      "birthdate": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)"
+    },
+    "completeName": "Norberto Montes",
+    "department": "rrhh",
+    "photo": "https://employees-img.s3.amazonaws.com/5.jpg",
+    "salary": "11,500.00",
+    "status": "Activo"
+  },
+  {
+    "id": "107e1655-1b0b-4b11-ac47-fef22cd12588",
+    "admission": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)",
+    "beneficiary": {
+      "id": "13",
+      "name": "Manuel Soto",
+      "relationship": "Hermano",
+      "birthdate": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)"
+    },
+    "completeName": "Victor Narro Lopez",
+    "department": "tech",
+    "photo": "",
+    "salary": "59,000.00",
+    "status": "Inactivo"
+  },
+  {
+    "id": "5915682e-7d3b-4dc7-ad6b-b48537808d9d",
+    "admission": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)",
+    "beneficiary": {
+      "id": "9",
+      "name": "Hernestina Suarez",
+      "relationship": "Madre",
+      "birthdate": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)"
+    },
+    "completeName": "Axel Fiel Suarez",
+    "department": "management",
+    "photo": "https://employees-img.s3.amazonaws.com/9.jpg",
+    "salary": "42,000.00",
+    "status": "Activo"
+  },
+  {
+    "id": "9c3b355e-79c5-423e-8ca4-30ae721ee3d3",
+    "admission": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)",
+    "beneficiary": {
+      "id": "13",
+      "name": "Luz Soto",
+      "relationship": "Hermana",
+      "birthdate": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)"
+    },
+    "completeName": "Maria Soto Soto",
+    "department": "business",
+    "photo": "https://employees-img.s3.amazonaws.com/4.jpg",
+    "salary": "62,000.00",
+    "status": "Activo"
+  },
+  {
+    "id": "5d251593-1ace-4069-b9fc-f2ee9140aeec",
+    "admission": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)",
+    "beneficiary": {
+      "id": "2",
+      "name": "Eva Soto",
+      "relationship": "Hija",
+      "birthdate": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)"
+    },
+    "completeName": "Abdiel Soto Mora",
+    "department": "tech",
+    "photo": "https://employees-img.s3.amazonaws.com/2.jpg",
+    "salary": "23,000.00",
+    "status": "Activo"
+  },
+  {
+    "id": "91cb9cd5-5813-4de6-8a56-ee40836ea62e",
+    "admission": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)",
+    "beneficiary": {
+      "id": "6",
+      "name": "Ana Naso",
+      "relationship": "Hijo",
+      "birthdate": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)"
+    },
+    "completeName": "Felipe Naso Fernandez",
+    "department": "rrhh",
+    "photo": "https://employees-img.s3.amazonaws.com/6.jpg",
+    "salary": "8,000.00",
+    "status": "Activo"
+  },
+  {
+    "id": "4172bfb8-2d6a-4bf1-ab26-35f91d6d3e19",
+    "admission": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)",
+    "beneficiary": {
+      "id": "11",
+      "name": "Dania Tapia",
+      "relationship": "Madre",
+      "birthdate": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)"
+    },
+    "completeName": "Antonio Tapia Molina",
+    "department": "business",
+    "photo": "https://employees-img.s3.amazonaws.com/11.jpg",
+    "salary": "78,000.00",
+    "status": "Activo"
+  },
+  {
+    "id": "edd8b88e-2d36-4ea3-9670-a785a6859e11",
+    "admission": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)",
+    "beneficiary": {
+      "id": "8",
+      "name": "Martha Haro",
+      "relationship": "Madre",
+      "birthdate": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)"
+    },
+    "completeName": "Ana Rodriguez Haro",
+    "department": "management",
+    "photo": "https://employees-img.s3.amazonaws.com/8.jpg",
+    "salary": "28,000.00",
+    "status": "Activo"
+  },
+  {
+    "id": "50a41cb7-e10a-441e-b1e3-c18077306f6c",
+    "admission": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)",
+    "beneficiary": {
+      "id": "10",
+      "name": "Mora Sue",
+      "relationship": "Hija",
+      "birthdate": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)"
+    },
+    "completeName": "Filipa Sue Moran",
+    "department": "business",
+    "photo": "https://employees-img.s3.amazonaws.com/10.jpg",
+    "salary": "48,000.00",
+    "status": "Activo"
+  },
+  {
+    "id": "9d6f40f1-f472-4916-a326-372520f42e8a",
+    "admission": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)",
+    "beneficiary": {
+      "id": "1",
+      "name": "Hernesto Hernandez",
+      "relationship": "Hijo",
+      "birthdate": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)"
+    },
+    "completeName": "Manuel Hernandez Gil",
+    "department": "tech",
+    "photo": "https://employees-img.s3.amazonaws.com/1.jpg",
+    "salary": "19,000.00",
+    "status": "Activo"
+  },
+  {
+    "id": "9e5fb36b-1572-40d6-b084-3dea4f422ce4",
+    "admission": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)",
+    "beneficiary": {
+      "id": "3",
+      "name": "Fermin Diaz",
+      "relationship": "Padre",
+      "birthdate": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)"
+    },
+    "completeName": "Helena Diaz Moreno",
+    "department": "tech",
+    "photo": "https://employees-img.s3.amazonaws.com/3.jpg",
+    "salary": "17,000.00",
+    "status": "Activo"
+  },
+  {
+    "id": "7ad98db9-a2bf-4998-b268-58a716dedad3",
+    "admission": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)",
+    "beneficiary": {
+      "id": "4",
+      "name": "Daniel Paz",
+      "relationship": "Padre",
+      "birthdate": "Thu Nov 24 2022 07:29:34 GMT-0600 (Central Standard Time)"
+    },
+    "completeName": "Alex Dantes Paz",
+    "department": "rrhh",
+    "photo": "",
+    "salary": "18,000.00",
+    "status": "Activo"
+  }
+]

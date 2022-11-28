@@ -1,14 +1,14 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-/dist
+interface/dist
 /tmp
 /out-tsc
 # Only exists if Bazel was run
 /bazel-out
 
 # dependencies
-/node_modules
+interface/node_modules
 
 # profiling files
 chrome-profiler-events*.json
@@ -31,8 +31,8 @@ chrome-profiler-events*.json
 .history/*
 
 # misc
-/.angular/cache
-/.sass-cache
+interface/.angular/cache
+interface/.sass-cache
 /connect.lock
 /coverage
 /libpeerconnection.log

@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from './material/material.module';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
@@ -18,6 +18,8 @@ import { HeaderComponent } from './shared/header/header.component';
 import { SearchComponent } from './shared/search/search.component';
 import { SessionComponent } from './shared/session/session.component';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
+import { LoaderInterceptorService } from './shared/interceptors/loader-interceptor.service';
+import { LoaderComponent } from './shared/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { AngularFireAuth } from '@angular/fire/compat/auth';
     ErrorPageComponent,
     HeaderComponent,
     SearchComponent,
-    SessionComponent
+    SessionComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,12 @@ import { AngularFireAuth } from '@angular/fire/compat/auth';
     HeaderComponent
   ],
   providers: [
-    { provide: FIREBASE_OPTIONS, useValue: environment.firebase }
+    { provide: FIREBASE_OPTIONS, useValue: environment.firebase },
+    { 
+      provide: HTTP_INTERCEPTORS,
+      useClass: LoaderInterceptorService,
+      multi: true
+    },
   ],
   bootstrap: [AppComponent]
 })
