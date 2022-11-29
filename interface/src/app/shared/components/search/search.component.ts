@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Employee } from 'src/app/employees/model/employees.model';
-import { EmployeesService } from '../../employees/services/employees.service';
+import { EmployeesService } from '../../../employees/services/employees.service';
 
 @Component({
   selector: 'app-search',

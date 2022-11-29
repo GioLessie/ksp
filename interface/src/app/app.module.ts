@@ -13,13 +13,13 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 
-import { ErrorPageComponent } from './shared/error-page/error-page.component';
-import { HeaderComponent } from './shared/header/header.component';
-import { SearchComponent } from './shared/search/search.component';
-import { SessionComponent } from './shared/session/session.component';
+import { ErrorPageComponent } from './shared/pages/error-page/error-page.component';
+import { HeaderComponent } from './shared/components/header/header.component';
+import { SearchComponent } from './shared/components/search/search.component';
+import { SessionComponent } from './shared/components/session/session.component';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { LoaderInterceptorService } from './shared/interceptors/loader-interceptor.service';
-import { LoaderComponent } from './shared/loader/loader.component';
+import { LoaderComponent } from './shared/components/loader/loader.component';
 
 @NgModule({
   declarations: [

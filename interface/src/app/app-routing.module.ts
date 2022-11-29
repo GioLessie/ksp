@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard, redirectUnauthorizedTo, redirectLoggedInTo } from '@angular/fire/auth-guard';
 
-import { ErrorPageComponent } from './shared/error-page/error-page.component';
+import { ErrorPageComponent } from './shared/pages/error-page/error-page.component';
 
 const redirectUnauthorizedToLogin = () => redirectUnauthorizedTo(['auth']);
 const redirectLoggedInToHome = () => redirectLoggedInTo(['empleados']);
